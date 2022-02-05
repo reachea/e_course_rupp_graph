@@ -1,0 +1,24 @@
+extend type Query {
+  courseList: [Course]
+}
+
+extend type Mutation {
+  createCourse(input: CourseInput): Int!
+}
+
+input CourseInput {
+  author: String
+  name: String
+  price: Float
+  discount: Float
+  thumbnail: String
+}
+
+type Course {
+  id: Int
+  author: String
+  name: String
+  price: Float
+  discount: Float
+  thumbnail: String
+}
