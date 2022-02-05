@@ -1,3 +1,4 @@
+import '@babel/polyfill';
 import {servers} from "./createApolloServer";
 import { config } from "dotenv";
 
